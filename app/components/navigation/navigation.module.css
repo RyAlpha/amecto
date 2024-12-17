@@ -1,0 +1,54 @@
+/* Basic navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 40px;
+    background-color: rgba(2, 2, 2, 0.8); /* Full opacity initially */
+    color: white;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    z-index: 10;
+}
+
+.navbar.scrolled {
+    background-color: rgba(2, 2, 2, 0.5); /* Reduced opacity when scrolling */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.logo h3 {
+    font-size: 24px;
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+.ame_logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Hamburger menu for mobile view in the future if needed*/
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 8px;
+    }
+}

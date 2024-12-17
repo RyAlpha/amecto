@@ -1,0 +1,154 @@
+.darkbg {
+    /* padding: 64px 0px; */
+    background: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    color: var(--primaryColor);
+}
+
+.lightbg {
+    background: var(--primaryColor);
+    max-width: 100%;
+    color: var(--secondaryColor);
+}
+
+.container {
+    /* max-width: 1440px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 32px 100px 32px;
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    justify-content: center;
+    width: 100%;
+}
+
+.left {
+    width: 50%;
+    text-align: left;
+    flex-wrap: wrap;
+    margin-right: auto;
+}
+
+.right {
+    width: 50%;
+    text-align: right;
+    margin-left: auto;
+}
+
+.container img {
+    width: 75%;
+    margin: auto;
+}
+
+/* Information */
+.information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_gap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ticker_info {
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+/* Links */
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Finale */
+.center .finale {
+    width: 40%;
+}
+
+/* Extra colors */
+.benny {
+    color: #b2bfe5;
+}
+
+.attention {
+    color: #b2bfe5;
+    font-weight: bold;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 680px) {
+    .container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 72px 15px 72px 15px;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+
+    .center {
+        gap: 32px;
+    }
+
+    .center .finale {
+        width: 75%;
+    }
+
+    .left {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .right {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 72px 15px 72px 15px;
+    }
+
+    .left {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .right {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .container img {
+        width: 100%;
+    }
+}
